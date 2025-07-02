@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gender_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFFD"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/frame__1_"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back" />
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/gender_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your Gender?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2F1F67"
+        android:fontFamily="@font/manrope_regular"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Gender Options Container -->
+    <LinearLayout
+        android:id="@+id/gender_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Male Option -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="32dp">
+
+            <ImageView
+                android:id="@+id/male_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/male"
+                android:contentDescription="Male"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#2F1F67"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/manrope_regular" />
+        </LinearLayout>
+
+        <!-- Female Option -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/female_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/female"
+                android:contentDescription="Female"
+                android:tint="#2E236C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#2E236C"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/manrope_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

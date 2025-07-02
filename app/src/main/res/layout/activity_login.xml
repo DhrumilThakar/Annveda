@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#F8EFFD">
+
+    <ImageView
+        android:id="@+id/login_with_apple"
+        android:layout_width="357dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="610dp"
+        android:contentDescription="login_with_apple"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_with_apple" />
+
+    <ImageView
+        android:id="@+id/login_with_google"
+        android:layout_width="357dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="-150dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_with_google"
+        android:contentDescription="login_with_apple" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-550dp"
+        android:contentDescription="Login with photo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Changes are Good!"
+        android:textSize="25dp"
+        android:textColor="#2E236C"
+        android:textFontWeight="700" />
+
+    <TextView
+        android:id="@+id/sub_text"
+        android:layout_width="358dp"
+        android:layout_height="138dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="-1dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="You did a beautiful change in your life by choosing yoga, which will help you to change yourself inside out."
+        android:textAlignment="center"
+        android:textColor="#2E236C"
+        android:textFontWeight="400"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
