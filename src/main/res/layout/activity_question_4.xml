@@ -26,25 +26,19 @@
         android:textColor="#2E236C"
         android:fontFamily="@font/manrope_regular"
         android:layout_gravity="center_horizontal" />
-    <TextView
-        android:layout_width="77dp"
-        android:layout_height="25dp"
-        android:text="Type here"
-        android:layout_marginLeft="22dp"
-        android:textColor="#EBC4FF"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/manrope_regular"
-        android:textFontWeight="500"
-        android:textSize="16sp"/>
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="text"
+        android:hint="Type here"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="-10dp"
-        android:layout_marginTop="-10dp"
-        android:text="______________________________________________"
-        android:textColor="#2E236C" />
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/manrope_regular"
+        android:textColor="#2E236C"
+        android:textColorHint="#EBC4FF";
+
     <TextView
         android:layout_width="110dp"
         android:layout_height="33dp"
