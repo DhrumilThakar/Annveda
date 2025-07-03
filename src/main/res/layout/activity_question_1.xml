@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFFD"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/frame__1_"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="166px"
+        android:fontFamily="@font/manrope_regular"
+        android:text="Welcome the sarvayoga! Here there is yoga for everybody. Before start of this journey give answer of the 3 simple questions."
+        android:textAlignment="center"
+        android:textColor="#2E236C"
+        android:textFontWeight="400"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/Question_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sign"
+        android:contentDescription="logo2"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="119dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Continue"
+        android:textFontWeight="700"
+        android:textSize="24dp"
+        android:textColor="#2E236C"/>
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/frame"
+        android:contentDescription="back button"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-29dp"/>
+
+</LinearLayout>

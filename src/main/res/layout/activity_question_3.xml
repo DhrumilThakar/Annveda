@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F8EFFD">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/frame__1_"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+    <TextView
+        android:id="@+id/age_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your Age?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2E236C"
+        android:fontFamily="@font/manrope_regular"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:text="________________"
+        android:textColor="#2E236C"
+        android:textFontWeight="8000000" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="48"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="49"
+        android:fontFamily="@font/manrope_regular"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="50"
+        android:fontFamily="@font/manrope_regular"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        android:textColor="#2E236C"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:text="51"
+        android:fontFamily="@font/manrope_regular"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="52"
+        android:fontFamily="@font/manrope_regular"
+        android:textFontWeight="700"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:text="________________"
+        android:textColor="#2E236C"
+        android:textFontWeight="8000000" />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="200dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Continue"
+        android:textFontWeight="700"
+        android:textSize="24dp"
+        android:textColor="#2E236C"/>
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/frame"
+        android:contentDescription="back button"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="-29dp"/>
+
+
+
+</LinearLayout>
