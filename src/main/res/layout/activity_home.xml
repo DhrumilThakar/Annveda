@@ -34,9 +34,9 @@
         android:fontFamily="@font/inter_variablefont_opsz_wght"
         android:lineSpacingExtra="8dp"
         android:text="Good\nMorning\nDhrumil"
+        android:textColor="#2E236C"
         android:textFontWeight="400"
-        android:textSize="36dp"
-        android:textColor="#2E236C"/>
+        android:textSize="36dp" />
 
     <TextView
         android:id="@+id/schedule"
@@ -46,231 +46,322 @@
         android:fontFamily="@font/inter_variablefont_opsz_wght"
         android:textFontWeight="500"
         android:textSize="14dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="10dp"
         android:textColor="#2E236C"/>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
 
+
+        <FrameLayout
+            android:id="@+id/clickableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/myImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Picture"
+                android:src="@drawable/rectangle_11" />
+
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:gravity="center"
+                android:text="SAT"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="40dp"
+                android:outlineAmbientShadowColor="#C8ACD6"
+                android:src="@drawable/line_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:text="  10\nMAY"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clickableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Picture"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rectangle_12" />
+
+            <TextView
+                android:id="@+id/select_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:gravity="center"
+                android:text="SUN"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:outlineAmbientShadowColor="#DCDCDC"
+                android:src="@drawable/line_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:text="  11\nMAY"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="600"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/clickableLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/non_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Picture"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rectangle_11" />
+
+            <TextView
+                android:id="@+id/Monday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:gravity="center"
+                android:text="MON"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:outlineAmbientShadowColor="#C8ACD6"
+                android:src="@drawable/line_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:text="  12\nMAY"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/non_select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <ImageView
+                android:id="@+id/box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Picture"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rectangle_11" />
+
+            <TextView
+                android:id="@+id/Tuesday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:gravity="center"
+                android:text="TUE"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:outlineAmbientShadowColor="#C8ACD6"
+                android:src="@drawable/line_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:text="  13\nMAY"
+                android:textColor="#2E236C"
+                android:textFontWeight="600"
+                android:textSize="14dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Your Flow"
+        android:textColor="#433D8B"
+        android:fontFamily="@font/inter_variablefont_opsz_wght"
+        android:textFontWeight="500"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"/>
     <FrameLayout
-        android:id="@+id/clickableLayout1"
+        android:id="@+id/program1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:clickable="true"
         android:focusable="true"
-        android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
+        android:foreground="?attr/selectableItemBackground">
 
-
-        <ImageView
-            android:id="@+id/myImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_11"
-            android:contentDescription="Picture" />
-
-        <TextView
-            android:id="@+id/myText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:text="SAT"
-            android:textColor="#2E236C"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/line_5"
-            android:outlineAmbientShadowColor="#C8ACD6"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="12dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#2E236C"
-            android:text="  10\nMAY"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="14dp" />
-
-    </FrameLayout>
-
-
-    <FrameLayout
-        android:id="@+id/clickableLayout"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
-
+        android:src="@drawable/rectangle_16"/>
         <ImageView
-            android:id="@+id/gradient"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="Picture"
-            android:src="@drawable/rectangle_12" />
-
-        <TextView
-            android:id="@+id/select_day"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:gravity="center"
-            android:text="SUN"
-            android:textColor="#FFFFFF"
-            android:textFontWeight="600"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:src="@drawable/program1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="40dp"
-            android:outlineAmbientShadowColor="#DCDCDC"
-            android:src="@drawable/line_5" />
-
+            android:src="@drawable/line_11"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="170dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
+            android:text="Calm & Connect"
+            android:textColor="#2E236C"
             android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:text="  11\nMAY"
-            android:textColor="#FFFFFF"
             android:textFontWeight="600"
-            android:textSize="14dp" />
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clamming yoga session for mental health"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="200dp"
+            android:fontFamily="@font/inter_variablefont_opsz_wght"
+            android:textFontWeight="300"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_17"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Session\n6:00 - 7:00 am"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/inter_variablefont_opsz_wght"
+            android:textFontWeight="500"
+            android:textSize="10dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginLeft="210dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_17"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evening Session\n6:00 - 7:00 pm"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/inter_variablefont_opsz_wght"
+            android:textFontWeight="500"
+            android:textSize="10dp"
+            android:layout_marginTop="123dp"
+            android:layout_marginLeft="210dp"/>
+
 
     </FrameLayout>
 
-    <FrameLayout
-        android:id="@+id/clickableLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
-
-
-        <ImageView
-            android:id="@+id/non_select"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_11"
-            android:contentDescription="Picture" />
-
-        <TextView
-            android:id="@+id/Monday"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:text="MON"
-            android:textColor="#2E236C"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/line_5"
-            android:outlineAmbientShadowColor="#C8ACD6"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="12dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#2E236C"
-            android:text="  12\nMAY"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="14dp" />
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/non_select2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground"
-        android:padding="8dp">
-
-
-        <ImageView
-            android:id="@+id/box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_11"
-            android:contentDescription="Picture" />
-
-        <TextView
-            android:id="@+id/Tuesday"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:text="TUE"
-            android:textColor="#2E236C"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/line_5"
-            android:outlineAmbientShadowColor="#C8ACD6"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="12dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#2E236C"
-            android:text="  12\nMAY"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="14dp" />
-
-    </FrameLayout>
-
-</LinearLayout>
 
 </LinearLayout>
