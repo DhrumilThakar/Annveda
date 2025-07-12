@@ -359,9 +359,66 @@
             android:textSize="10dp"
             android:layout_marginTop="123dp"
             android:layout_marginLeft="210dp"/>
-
-
     </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/line_2"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Home Button -->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icons8_home"
+            android:background="@drawable/home_button_background"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp" />
+
+        <!-- Heart Button -->
+        <ImageButton
+            android:id="@+id/heartButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/heart_like_favorite_svgrepo_com"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Favorites"
+            android:tint="@android:color/white"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="1dp" />
+
+        <!-- Profile Button -->
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="35dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profile"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/account_user_avatar_svgrepo_com"
+            android:tint="@android:color/white" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

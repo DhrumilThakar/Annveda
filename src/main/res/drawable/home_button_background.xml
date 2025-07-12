@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- This defines the solid color of the circle -->
+    <solid android:color="@android:color/white" />
+    <!-- This ensures the shape is an oval (which will be a circle if width and height are equal) -->
+</shape>
