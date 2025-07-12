@@ -61,6 +61,12 @@
         android:textColor="#2E236C"
         android:textFontWeight="400"
         android:textSize="20dp" />
-
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Next Screen"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
 
 </LinearLayout>

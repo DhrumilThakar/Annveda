@@ -7,16 +7,14 @@
     android:padding="24dp">
 
     <ImageButton
-    android:id="@+id/floatingButton"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentEnd="true"
-    android:background="@drawable/circle_background"
-    android:src="@drawable/symbol"
-    android:scaleType="centerInside"
-    android:contentDescription="Floating Logo Button"
-    android:elevation="8dp"/>
+        android:id="@+id/floatingButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/symbol"
+        android:scaleType="centerInside"
+        android:contentDescription="Floating Logo Button"
+        android:elevation="8dp"/>
 
     <ImageView
         android:id="@+id/home_pic_1"
@@ -271,6 +269,7 @@
         </FrameLayout>
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
@@ -281,94 +280,581 @@
         android:textFontWeight="500"
         android:layout_marginTop="5dp"
         android:textSize="14dp"/>
-    <FrameLayout
-        android:id="@+id/program1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle_16"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/program1"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"/>
+    <!-- Add ScrollView here -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <!-- LinearLayout to hold the scrollable content -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/line_11"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="170dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calm & Connect"
-            android:textColor="#2E236C"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="600"
-            android:textSize="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="200dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clamming yoga session for mental health"
-            android:textSize="12dp"
-            android:textColor="#ffffff"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="200dp"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="300"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_17"
-            android:layout_marginTop="90dp"
-            android:layout_marginLeft="200dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Morning Session\n6:00 - 7:00 am"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="500"
-            android:textSize="10dp"
-            android:layout_marginTop="88dp"
-            android:layout_marginLeft="210dp"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_17"
-            android:layout_marginTop="125dp"
-            android:layout_marginLeft="200dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Evening Session\n6:00 - 7:00 pm"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/inter_variablefont_opsz_wght"
-            android:textFontWeight="500"
-            android:textSize="10dp"
-            android:layout_marginTop="123dp"
-            android:layout_marginLeft="210dp"/>
-    </FrameLayout>
+            android:orientation="vertical">
 
+            <FrameLayout
+                android:id="@+id/program1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calm &amp; Connect"
+                    android:textColor="#2E236C"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="600"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clamming yoga session for mental health"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program1_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Session\n6:00 - 7:00 am"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program1_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Session\n5:00 - 6:30 pm"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="210dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/program2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_19"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flexi Yoga"
+                    android:textColor="#2E236C"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="600"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increase your body flexibility with a flexible yoga session"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program2_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Session\n6:30 - 7:00 am"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program2_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Session\n6:00 - 7:00 pm"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="210dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/program3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_22"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strength &amp; Stretch"
+                    android:textColor="#2E236C"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="600"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Improve your body strength with a prowefull yoga session"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program4_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Session\n9:00 - 10:30 am"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program3_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Session\n6:30 - 7:30 pm"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="210dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/program4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_25"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Daily Dose"
+                    android:textColor="#2E236C"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="600"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flow into your regular yoga session"
+                    android:textSize="12dp"
+                    android:textColor="#8271DE"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program3_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Session\n6:00 - 7:00 am"
+                    android:textColor="#8271DE"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program4_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Session\n6:00 - 7:00 pm"
+                    android:textColor="#8271DE"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="210dp"/>
+            </FrameLayout>
+            <!-- ... (previous code for program1 to program4) ... -->
+
+            <FrameLayout
+                android:id="@+id/program5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_28"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:id="@+id/program5_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yoga for organ"
+                android:textColor="#2E236C"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:textFontWeight="600"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program5_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flow into your regular yoga session"
+                android:textSize="12dp"
+                android:textColor="#8271DE"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="200dp"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program5_morning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning Session\n6:00 - 7:00 am"
+                android:textColor="#8271DE"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:textFontWeight="500"
+                android:textSize="10dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program5_evening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evening Session\n6:00 - 7:00 pm"
+                android:textColor="#8271DE"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:textFontWeight="500"
+                android:textSize="10dp"
+                android:layout_marginTop="123dp"
+                android:layout_marginLeft="210dp"/>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rectangle_31"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$58"
+                    android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="1dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/program6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_28"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/program6"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_11"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="170dp"/>
+                <TextView
+                    android:id="@+id/program6_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Couple yoga"
+                android:textColor="#2E236C"
+                android:fontFamily="@font/inter_variablefont_opsz_wght"
+                android:textFontWeight="600"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program6_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flow into your regular yoga session"
+                    android:textSize="12dp"
+                    android:textColor="#8271DE"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="200dp"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="300"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program6_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Session\n6:00 - 7:00 am"
+                    android:textColor="#8271DE"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginLeft="210dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_17"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginLeft="200dp"/>
+                <TextView
+                    android:id="@+id/program6_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Session\n6:00 - 7:00 pm"
+                    android:textColor="#8271DE"
+                    android:fontFamily="@font/inter_variablefont_opsz_wght"
+                    android:textFontWeight="500"
+                    android:textSize="10dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="210dp"/>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_31"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$40"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="1dp"/>
+            </FrameLayout>
+
+            <!-- ... (rest of your ScrollView and bottom navigation) ... -->
+
+            <!-- Move the bottom navigation LinearLayout here -->
+            <!-- Note: You might need to adjust layout parameters for this to appear correctly at the bottom -->
+            <!-- If you want it stuck to the bottom of the screen, it should remain outside the ScrollView -->
+            <!-- If you want it to scroll with the content, keep it inside the ScrollView's child LinearLayout -->
+
+
+
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="@drawable/line_2"
+        android:background="@drawable/navbar_background"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="6dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
 
         <!-- Home Button -->
         <ImageButton
@@ -377,10 +863,12 @@
             android:layout_height="48dp"
             android:layout_marginLeft="30dp"
             android:src="@drawable/icons8_home"
-            android:background="@drawable/home_button_background"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Home"
             android:scaleType="fitCenter"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
 
         <!-- Spacer -->
         <View
@@ -398,7 +886,9 @@
             android:contentDescription="Favorites"
             android:tint="@android:color/white"
             android:scaleType="fitCenter"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
 
         <!-- Spacer -->
         <View
@@ -416,9 +906,15 @@
             android:padding="8dp"
             android:scaleType="fitCenter"
             android:src="@drawable/account_user_avatar_svgrepo_com"
-            android:tint="@android:color/white" />
-
+            android:tint="#ffffff"
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
-
-
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Screen"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
